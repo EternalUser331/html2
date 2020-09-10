@@ -1,3 +1,9 @@
+const KEYS = {
+	LEFT: 37,
+	RIGHT: 39,
+	SPACE: 32
+};
+
 let game = {
 	ctx: null,
 	platform: null,
@@ -13,7 +19,23 @@ let game = {
 	},
 	init: function(){
 		this.ctx = document.getElementById("mycanvas").getContext("2d");
+		this.setEvents();
 	},
+	setEvents() {
+		window.addEventListener("keydown", e => {
+			if (e.keyCode ===KEYS.SPACE) {
+				this.platform.fire();
+			} else if (e.keyCode === KEYS.LEFT ||  e.keyCode === KEYS.RIGHT){
+				this.platform.start(e.keyCode);
+			}
+		 
+		});
+		window.addEventListener("keyup", e => {
+			this.platform.stop();
+		});
+	},
+
+
 	preload(callback) {
 		let loaded = 0;
 		let required = Object.keys(this.sprites).length;
@@ -31,6 +53,11 @@ let game = {
 			
 		}
 	},
+	update() {
+		this.platform.move();
+		this.ball.move();
+	},
+
 	create() {
 		for (let row = 0; row < this.rows; row++) {
 			for (let col = 0; col < this.cols; col++) {
@@ -44,6 +71,8 @@ let game = {
 	run() {
 		window.requestAnimationFrame(() => {
 			this.render();
+			this.update();
+			this.run();
 		});
 	},
 	render(){
@@ -68,10 +97,20 @@ let game = {
 };
 
 	game.ball = {
+		dy: 0,
+		velocity: 3,
 		x: 320,
 		y: 280,
 		width: 20,
-		height: 20
+		height: 20,
+		start() {
+			this.dy = -this.velocity;
+		},
+		move() {
+			if (this.dy) {
+				this.y += this.dy;
+			}
+		}
 	};
 
 
@@ -79,13 +118,51 @@ let game = {
 		valocity:6,
 		dx: 0,
 		x: 280,
-		y: 300
-		// move() {
-		// 	if (this.dx) {
-		// 		this.x += this.dx;
-		// 	}
-		// }
+		y: 300,
+		ball: game.ball,
+		fire() {
+			if (this.ball) {
+				this.ball.start();
+				this.ball = null;
+			}
+		},
+		start(direction) {
+			if (direction === KEYS.LEFT) {
+				this.dx = -this.velocity;
+			} else if (direction === KEYS.RIGHT) {
+				this.dx = this.velocity;
+			}
+		},
+		stop() {
+			this.dx = 0;
+		},
+		move() {
+		 	if (this.dx) {
+				this.x += this.dx;
+				if (this.ball) {
+					this.ball.x += this.dx;
+				}
+		 	}
+		}
 	};
+
+
+window.addEventListener("load", () => {
+	game.start();
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -99,6 +176,3 @@ let game = {
 	// }
 
 
-window.addEventListener("load", () => {
-	game.start();
-})
