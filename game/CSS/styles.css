@@ -1,0 +1,161 @@
+.clor{
+	background: gray;
+	font-color: white;
+
+}
+
+.contact{
+	width: 300px;
+	height: 200px;
+	float: left;
+	line-height: 25px;
+}
+
+.block{
+	clear: both;
+	text-align: left;
+}
+
+label{
+	float: left;
+	padding-right: 10px;
+}
+
+.time{
+	line-height: 30px;
+	left: 400px;
+	position: absolute;
+	background-color: grey;
+	border: 4px double black;
+	background: gray;
+	padding: 10px;
+}
+
+.amount{
+	position: absolute;
+	bottom: -1000px;
+	border: 4px double purple;
+	background-color: #fc3
+}
+
+.volume{
+	position: absolute;
+	bottom: -1050px;
+	border: 4px dotted black;
+}
+
+.color{
+	position: absolute;
+	bottom: -1000px;
+	border: outset purple;
+	left: 350px;
+	padding: 6px;
+}
+
+.donat{
+	position: absolute;
+	left: 850px;
+	background-color: Orange;
+
+}
+
+.required{
+	position: absolute;
+	bottom: -1250px;
+	padding: 20px;
+}
+
+.knopka1{
+	position: absolute;
+	right: 120px;
+}
+
+.autofocus{
+	position: absolute;
+	bottom: -1170px;
+	right: 1100px;
+	padding: 10px;
+	border: 5px solid DarkSlateGray;
+}
+
+.placeholder{
+	position: absolute;
+	bottom: -1200px;
+	padding: 15px;
+	right: 600px;
+}
+
+.autocomplete{
+	position: absolute;
+	bottom: -1500px;
+	padding: 20px;
+
+}
+
+.ramka{
+	border: 5px dotted navy;
+}
+
+.pattern{
+	position: absolute;
+	bottom: -1650px;
+	padding: 10px;
+	border: 5px solid black;
+}
+
+.formats{
+	position: absolute;
+	bottom: -1700px;
+	padding: 10px;
+	left: 300px;
+}
+
+.audio1{
+	position: absolute;
+	bottom: -1800px;
+	padding: 10px;
+}
+
+.audio2{
+	position: absolute;
+	bottom: -1850px;
+	padding: 10px;
+}
+
+.audio3{
+	position: absolute;
+	bottom: -1950px;
+	padding: 10px;
+}
+
+.audio4{
+	position: absolute;
+	bottom: -2000px;
+	padding: 10px;
+}
+
+.video1{
+	position: absolute;
+	bottom: -2000px;
+	padding: 10px;
+	left: 400px;
+}
+
+.video2{
+	position: absolute;
+	bottom: -2400px;
+	padding: 10px;
+}
+
+.video3{
+	position: absolute;
+	bottom: -3100px;
+	padding: 10px;
+}
+
+.video4{
+	position: absolute;
+	bottom: -2800px;
+	padding: 10px;
+	left: 900px;
+}

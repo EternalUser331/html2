@@ -1,0 +1,711 @@
+<!DOCTYPE>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>BAKUGANIN</title>
+		<link rel="stylesheet" href="CSS/styles.css">
+		<script type="text/javascript" src="JS/scripts.js"></script>
+		<style type="text/css">
+			time {
+				background: #f0f0f0;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<details>
+				<summary>ПРЕДСТОЯЩИЕ ОБСУЖДЕНИЯ</summary>
+				<p>
+					<strong>В новом году, <mark>у нас появится огромное кол-во статей.</mark></strong>
+				</p>
+				<ul>
+					<img src="image/lion.jpg" height="25%">
+					<li><mark>Первая статья</mark></li>
+					<li>Вторая статья</li>
+					<li>Третья статья</li>
+					<li>Третья статья</li>
+				</ul>
+			</details>
+		</div>
+		<div>
+			<ol start="4128" reversed>
+				<li>HTML and CSS + JS</li>
+				<li>JavaScript</li>
+				<li>jQuery</li>
+			</ol>
+		</div>
+			<ul reversed>
+				<li>HTML and CSS + JS</li>
+				<li>JavaScript</li>
+				<li>jQuery</li>
+			</ul>
+		</div>
+		<div>
+			<ol start="444" reversed>
+				<li value="1">HTML and CSS + JS</li>
+				<li value="2">JavaScript</li>
+				<li value="3">jQuery</li>
+			</ol>
+		</div>
+		<div class="clor">
+			<article contenteditable>
+				<h2>Не злоупотребляйте <code>section</code>!</h2>
+				<p>
+					Основной структурный элемент ХТМЛ5 <code>section</code> зачастую используется, как обычный контейнер для стиля, хотя для этого больше подходит <code>div</code>.
+				</p>
+			</article>
+		</div>
+		<div>
+			<p>
+				<b>Элементы</b><br>
+				basefont<br>
+				big<br />
+				center<br>
+				font<br />
+				plaintext<br />
+				s<br />
+				strike<br />
+				tt<br />
+				u<br />
+			</p>
+		</div>
+		<div>
+			<p>
+				<b>Атрибуты</b><br />
+				align
+			<br />
+				background
+			<br />
+				bgcolor
+			<br />
+				border
+			<br />
+				cellpaddng
+			<br />
+				cellspacing
+			<br />
+				height
+			<br />
+				valign
+			<br />
+				width
+			<br />
+			</p>
+		</div>
+		<div>
+			<article>
+				<p>Опубликовано: <time datetime="2012-12-23T08:23:11+07:00">сегодня</time></p>
+				<p><time>1957-10-04</time> запущен первый искусственный спутник Земли.</p>
+				<p><time>1960-08-19</time> первый полет собак в космос.</p>
+				<p><time>1961-04-12</time> первый полет человека в космос.</p>
+				<p><time>1963-06-16</time> первый полет женщины-космонавта.</p>
+				<p><time>1969-07-21</time> высадка человека на Луну.</p>
+			</article>
+		</div>
+		<div hidden="hidden">
+			Текст, который не отображается
+		</div>
+		<div><b>Привет, мир!</b></div>
+		<div>
+			<iframe poster="image/loading.png" width="560" height="315" src="https://www.youtube.com/embed/nZXG5f1zLrw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		<section>
+			<div>
+				<form>	
+					<!--Данные сохраняемые вместе с фоpмой но невидимые пользователю.-->
+					<br />
+					<input type="hidden" name="hidden1" value="" />
+					<br />
+					
+					<!--Поле для ввода пароля.-->
+					<input type="password" name="password1" value="" />
+					<br />
+					
+					<!-- Переключатель -->
+					Radio 1<input type="radio" checked="checked" name="group1" />
+					Radio 2<input type="radio" name="group1">
+					<br />
+					
+					<!-- Кнопка очищающая значение формы. -->		
+					<input type="reset" name="reset1" value="Reset">
+
+					<!-- Список в котором может быть выбран один элемент -->
+					<select name="select1">
+						<option value="value1">text1</option>
+						<option value="value2">text2</option>
+						<option value="value3">text3</option>
+					</select>
+					<br />
+					<br />
+
+					<!-- Список со множественным выбором -->
+					<select multiple="multiple" name="multipleSelect1">
+						<option value="value">text</option>
+						<option value="value">text</option>
+						<option value="value">text</option>
+					</select>
+					<br />
+					<br />
+
+					<!-- Кнопка для передачи данных формы. -->
+					<input type="submit" name="submit1" value="Submit" />
+					<br />
+
+					<!-- Однострочное поле ввода -->
+					<textareatype name="textArea1" rows="4" cols="10"></textareatype>
+				</form>
+			</div>
+		</section>
+		<div>
+			<form>
+				<p>
+					<label for="search" accesskey="5">
+						Найти
+					</label>
+					<input id="search" type="sea" name="query">
+				
+				</p>
+				<button type="submit">Отправить </button>
+			</form>
+		</div>
+		<div class="contact">
+			<form>
+				<fieldset>
+					<legend>Контатная информация</legend>
+					<p>
+						<!-- 
+							email - браузер проводит валидацию корректности введенного email адреса.
+						 -->
+						 <div class="blok">
+							 <label for="Email1">
+							 	E-mail
+							 	<input id="em" type="email" name="email" title="Формат данных не правельный. Только в Chrome" />
+							 </label>
+						</div>
+					</p>
+					<p>
+						<!-- 
+							url - браузер проводит валидацию корректности введенного адреса.
+						 -->
+						<div class="blok">
+							<label for="Site1">
+								Сайт
+								<input id="s" type="url" name="website" title="Абсолютный URL. Обязательно с протоколом HTTP. Пример - http://html5readiness.com/
+								" />
+							</label>
+						</div>
+					</p>
+					<p>
+						<!-- 
+							tel - мобильный браузер будет отображать экранную клавиатуру с цифрами
+						 -->
+					<div class="blok">
+						<label for="Phone1">
+							Телефон
+							<input id="ph" type="tel" name="phone" />
+						</label>
+					</div>
+					</p>
+				</fieldset>
+				<br>
+				<div>
+					<p>
+						<input type="submit" name="Отправить">
+					</p>
+				</div>
+			</form>
+		</div>
+		<div class="time">
+			<form>
+				<p>
+					<label>
+						<!-- 
+							datetime - элемент для выбора даты и времени.
+						 -->
+						Укажите дату и время
+						<input type="datetime" name="dateAndtime" />
+					</label>
+				</p>
+				<p>
+					<input type="submit" value="Отправить">
+				</p>
+			</form>
+			<form>
+				<p>
+					<label>
+						<!-- 
+							date - элемент для выбора даты. Отображает всплывающий календарь. атрибуты min и max определяют диапазон допустимых дат.
+						 -->
+						Укажите дату
+						<input type="date" name="date" min="2011-03-15" max="2012-03-14" />
+					</label>
+				</p>
+				<p>
+					<label>
+						<!-- 
+							time - элемент для выбора времени. Атрибуты min и max определяют диапазон допустимого времени.
+						 -->
+						Укажите время
+						<input type="time" name="time" min="06:00" max="20:00" />
+					</label>
+				</p>
+				<p>
+					<input type="submit" name="Отправить" />
+				</p>
+			</form>
+		</div>
+		<div class="amount">
+			<form>
+				<p>
+					<label>
+						Количество
+						<input type="number" name="quantity" />
+					</label>
+				</p>
+				<p>
+					<input type="submit" value="Отправить">
+				</p>
+			</form>
+			<form>
+				<p>
+					<label>
+						Количество
+						<input type="number" name="quantity" min="2" max="20" step="2" />
+					</label>
+				</p>
+				<p>
+					<input type="submit" name="Отправить" />
+				</p>
+			</form>
+		</div>
+		<div class="volume">
+			<form>
+				<p>
+					<label>
+						Громкость
+						<input type="range" 
+						name="volume"
+						min="0"
+						max="10"
+						step="1"
+						value="5" />
+					</label>
+				</p>
+			</form>
+		</div>
+		<div class="color">
+			<form>
+				<p>
+					<label>
+						Цвет фона
+						<input type="color" name="bg" />
+					</label>
+				</p>
+				<p>
+					<label>
+						Цвет шрифта
+						<input type="submit" value="Отправить">
+					</label>
+				</p>
+			</form>
+		</div>
+		<div class="donat">
+			<form>
+				<p>
+					<label>
+						Сумма пожертвования
+						<!-- Элемент, который связанный с источником данных через атрибут list -->
+						<input type="text" name="donation" list="donations">
+					</label>
+				</p>
+				<!-- Источник данных -->
+				<datelist id="donations">
+					<option value="10.00">10.00 $</option>
+					<option value="30.00">30.00 $</option>
+					<option value="50.00">50.00 $</option>
+					<option value="100.00">100.00 $</option>
+					<option value="1000.00">1000.00 $</option>
+					<option value="10000.00">10000.00 $</option>
+				</datelist>
+				<p>
+					<input type="submit" value="Отправить" />
+				</p>
+			</form>
+		</div>
+		<div class="required">
+			<form>
+				<fieldset>
+					<legend>
+						Авторизация
+					</legend>
+					<p>
+						<label>
+							Имя пользователя
+							<!-- Атрибут required указывает, что поле обязательно для заполнения -->
+							<input type="text" name="username" required="required"/>
+						</label>
+					</p>
+					<p>
+						<label>
+							Пароль
+							<input type="password" name="pwd" required="required" />
+						</label>
+					</p>
+				</fieldset>
+				<p>
+					<input class="knopka1" type="submit" value="Отправить">
+				</p>
+			</form>
+		</div>
+		<div class="autofocus">
+			<form>
+				<p>
+					<label>
+						Первое поле
+						<input type="search" name="query" />
+					</label>
+				</p>
+				<p>
+					<label>
+						Второе поле с атмофокусом
+
+						<!-- 
+							Атрибут autofocus определяет элемент управления, который получит фокус, когда загрузится страница.
+						 -->
+						<input type="search" name="query" autofocus="autofocus" />
+					</label>
+				</p>
+
+				<p>
+					<input type="sum" name="Отправить" />
+				</p>
+			</form>
+		</div>
+		<div class="placeholder">
+			<form>
+				<!-- 
+					Атрибут placeholder используется для того чтобы определить подсказку отображаемую в поле ввода до того как пользователь начнет вводить текст.
+				 -->
+				<fieldset>
+					<legend>Контактная информация</legend>
+					<p>
+						<label>
+							Адрес электронной почты
+							<input type="email" name="emaill" placeholder="user@domail.com" />
+						</label>
+					</p>
+					<p>
+						<label>
+							Телефон
+							<input type="tel" name="phone" placeholder="123-12-34" />
+						</label>
+					</p>
+				</fieldset>
+				<p>
+					<input type="submit" value="Отправить" />
+				</p>
+			</form>
+		</div>
+		<div class="autocomplete">
+			<form>
+				<fieldset>
+					<legend>Авторизация</legend>
+					<p>
+						<label>
+							Имя пользователя
+							<input type="text" name="username" autocomplete="on" required="required" />
+						</label>
+					</p>
+					<p>
+						<label>
+							Пароль
+							<!-- autocomplete="off" - атрибут используется для того, чтобы не сохранял данные введенные в поле ввода, для обеспечения безопасности для критических данных. -->
+							<input type="password" name="pwd" autocomplete="on" required="required" />
+						</label>
+					</p>
+				</fieldset>
+				<p>
+					<input type="submit" value="Send">
+				</p>
+			</form>
+			<div class="ramka">
+				<a href="http://google.com">Проверка работа атрибутов формы</a>
+				<p>Перейдите по ссылке, после чего нажмите на кнопку "Back". Обратите внимание, что браузер не запомнил значеие в поле ввода пароля</p>
+			</div>
+		</div>
+		<div class="pattern">
+			<form>
+				<p>
+					<label>
+						Телефон
+						<!-- 
+							Атрибут pattern позволяет указать регулярное выражения с помощью, которого будут производиться валидация данных значение введенное в атрибут title будет испрользоваться для подсказки если пользователь допустит ошибку.
+						 -->
+						<input type="tel" name="phonee" pattern="\+372 \(\d{3}\) \d{3}-\d{2}-\d{2}"
+							title="+372 (063) 223-23-23">
+					</label>
+				</p>
+				<input type="submit" name="Send">
+			</form>
+		</div>
+		<div class="formats">
+			<!-- 
+				controls - Добавить элемент управления воспроизведения
+				autoplay - Начать воспроизведение после загрузки страницы
+			 -->
+			 <audio src="audio/Vivaldi.mp3" autoplay>
+				<a href="http://htmlbook.ru/html/audio">Браузер не поддерживает воспроизведение звуковых медиафайлов</a>
+			</audio>
+			Популярные мультимедиа контейнеры:
+			<ul>
+				<li><strong>AAC</strong>&mdash; формат сжатия с потерями, даёт более высокое качество чем MP3</li>
+				<li><strong>MP3</strong>&mdash; лицензируемый формат файла для хранения аудиоинформации</li>
+				<li><strong>OGG</strong>&mdash; открытый стандарт мультимедиа контейнера </li>
+				<li><strong>WAV</strong>&mdash; проприетарный аудиоформат без какого-либо сжатия;</li>
+				<li><strong>WEBM</strong>&mdash; открытый бесплатный медиаформат Google, основанный на аудиокодеке Vorbis</li>
+			</ul>
+		</div>
+		<div class="audio1">
+			<!-- autplay - сообщает браузеру о том, что необходимо начать вопсроизведение аудио, как только будет загружена страница
+				loop - повторно запустить аудио после завершения
+				canplaytype(mun) - возврашает строку, указывающую, может ли браузер воспроизводить данный тип медиафайла
+				currentTime - определяет текующую позицию воспроизведения в секундах
+				duration - содержит длину айдиофайла в секундах
+				play() - функция, начинает воспроизведение с текущей позиции
+				pause() - функция, приостанавливает воспроизведение аудио
+			-->
+
+			<audio id="audio" controls autoplay src="media/audio/Vivaldi.ogg">
+				Браузер не поддерживает воспроизведение звуковых медиафайлов
+			</audio>
+
+			<script>
+				if (!Modernizr.audio) {
+					alert("Браузер не поддерживает воспроизведение звуковых медиафайлов");
+				}
+				else {
+					var audio = document.getElementById("audio");
+					var res = audio.canPlayType('media/audio/ogg; codecs="vorbis"');
+					if (res) alert(res + "can play ogg vorbis")
+					else alert("no support for ogg vorbis");
+				}
+			</script>
+		</div>
+		<script type="text/javascript" src="JS/Moderniz-2.0.6.js"></script>
+		<div class="audio2">
+			<audio controls>
+				<!-- Указание файлов, которые будут использоваться для воспроизведения браузером.
+					 Браузер начнёт воспроизводить первый файл, формат которого поддерживает. 
+				-->
+				<source src="media/audio/Vivaldi.mp3">
+				<source src="media/audio/Vivaldi.ogg">
+				<a href="http://html5accessibility.com/">Браузер не поддерживает воспроизведение звуковыз медиафайлов</a>
+			</audio>
+		</div>
+		<div class="audio3">
+			<input id="playButton" type="button" value="play" />
+			
+			<audio id="audioElement">
+				<source src="media/audio/Vivaldi.mp3">
+				<source src="media/audio/Vivaldi.ogg">
+			</audio>
+
+			<script>
+				document.getElementById("playButton").onclick = playSound;
+
+				function playSound() {
+
+					var music = document.getElementById("audioElement")
+					var button = document.getElementById("playButton")
+					
+					// если аудиоплеер на паузе
+					if (music.paused) {
+						music.play(); // начать воспроизведение
+						button.value = "stop";			
+					}
+					else { //иначе
+						music.pause(); //остановить воспроизведение
+						button.value = "play";
+					}
+				}
+			</script>
+		</div>
+		<div class="audio4">
+			<audio>
+				<source src="media/audio/Vivaldi.mp3">
+				<source src="media/audio/Vivaldi.ogg">
+			</audio>
+
+			<button title="Воспроизвести с 30 секунды" onclick="playAt(30);">30 секунда</button>
+
+			<script>
+				function playAt(seconds) {
+					var audio = document.getElementsByTagName("audio")[0];
+					audio.currentTime = seconds;
+					audio.play();
+				}
+			</script>
+
+			<button title="остановить воспроизведение" onclick="stopAudio();">
+				STOP</button>
+			<script>
+
+				function stopAudio() {
+					var audio = document.getElementsByTagName("audio")[0];
+					audio.currentTime = 0;
+					audio.pause();
+				}
+			</script>
+		</div>
+		<div class="video1">
+			<video controls loop poster="poster.png">
+				<source src="video/vsvideo.mp4" />
+				<source src="video/vsvideo.ogg" />
+				<source src="video/vsvideo.webm" />
+			</video>
+
+			<ul>
+				<li><strong>MP4</strong>&mdash; мультимедиа-контейнер для проприетарного кодека H.264.</li>
+				<li><strong>OGV</strong>&mdash; свободный мультимедиа-контейнер с открытым исходным кодом для кодека Theora. Результаты сжатия имеют более низкое качество, чем H.264.</li>
+				<li><strong>WEBM</strong>&mdash; ещё один мультимедиа-контейнер с открытым исходными кодом, использующий новый бесплатный кодек VP8 от Google.</li>
+			</ul>
+		</div>
+		<div class="video2">
+			<video id="video" style="border: 2px solid gray; cursor: cross;">
+				<source src="media/video/vsvideo.mp4" />
+				<source src="media/video/vsvideo.ogg" />
+				<source src="mediavideo/vsvideo.webm" />
+			</video>
+
+			<script>
+				window.onload = function () {
+					var videoElem = document.getElementById("video");
+
+					// устанавливаем размер элемента на странице как половина высоты и ширины видеозаписи
+					videoElem.width = videoElem.videoWidth / 2;
+					videoElem.height = videoElem.videoHeight / 2;
+
+					// запускаем видео при наведении курсора
+					videoElem.onmouseover = function () {
+						this.play();
+					}
+
+					// останавливаем видео при выходе курсора
+					videoElem.onmouseout = function () {
+						this.pause();
+					}
+				}
+			</script>
+		</div>
+		<div class="video3">
+			<button title="Создать превью" onclick="generatePreview();">Создать превью</button>
+			
+			<br />
+
+			<video id="origVideo" width="640" height="360" style="border: 1px solid grey">
+				<source src="media/video/vsvideo.mp4" />
+				<source src="media/video/vsvideo.ogg" />
+				<source src="media/video/vsvideo.webm" />
+			</video>
+			
+			<br />
+
+			<canvas id="previewMed" style="border: 1px solid grey"></canvas>
+			<canvas id="previewSm" style="border: 1px solid grey"></canvas>	
+
+			<script>
+				function generatePreview() {
+					var video = document.getElementById('origVideo')
+
+					// получение контекста для работы с перым canvas
+					var canvas1 = document.getElementById('previewMed')
+					var context1 = canvas1.getContext('2d')
+
+					// получение контекста для рабоыт со вторым canvas
+					var canvas2 = document.getElementById('previewSm')
+					var context2 = canvas2.getContext('2d')
+
+					// задаём размеры для обеих canvas 
+					canvas1.width = 320;
+					canvas1.height = 180;
+					canvas2.width = 160;
+					canvas2.height = 90;
+
+					// добавляем обработчик на событие начала воспроизведения видео
+					video.addEventListener('play', function() {
+						drawVideo(this, context1, context2);
+					}, false);
+
+					// запускаем видео
+					video.play();
+				}
+				
+				function drawVideo (video, canvas1, canvas2) {
+
+					// если видео на паузе или завершено - не выполняем данную функцию
+					if (video.paused || video.ended) {
+						return false;
+					}
+
+					// рисуем на первом canvas видео размером 320 на 180
+					canvas1.drawImage(video, 0, 0, 320, 180);
+
+					// рисуем на втором canvas видео размером 160 на 90
+					canvas2.drawImage(video, 0, 0, 160, 90);
+
+					// планируем запуск функции drawVideo через 25 миллисекунд передавая текущие значения параметров функции
+					setTimeout(drawVideo, 10, video, canvas1, canvas2);
+				}
+			</script>
+		</div>
+		<div class="video4">
+			<video id="video10" style="border: 2px solid gray;" height="200" width="200">
+				<source src="media/video/vsvideo.mp4">
+				<source src="media/video/vsvideo.ogg">
+				<source src="media/video/vsvideo.webm">
+			</video>
+
+			<br />
+
+			<button id="part1Button">
+				1
+			</button>
+			<button id="part2Button">
+				2
+			</button>
+			<button id="part3Button">
+				3
+			</button>
+
+			<button id="playButton">play</button>
+			<button id="pauseButton">pause</button>
+
+			<script>
+				window.onload = function () {
+					var v = document.getElementById("video10");
+					var part = v.duration / 3;
+
+					document.getElementById("part1Button").onclick = function () {
+						v.currentTime = 0;
+					};
+
+					document.getElementById("part2Button").onclick = function () {
+						v.currentTime = part;
+					};
+
+					document.getElementById("part3Button").onclick = function () {
+						v.currentTime = part * 2;
+					};
+
+					document.getElementById("playButton").onclick = function () {
+						v.play();
+					};
+
+					document.getElementById("pauseButton").onclick = function () {
+						v.pause();
+					};
+				}
+			</script>
+		</div>
+	</body>
+</html>
