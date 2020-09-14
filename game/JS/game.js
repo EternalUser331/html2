@@ -1,3 +1,4 @@
+
 const KEYS = {
 	LEFT: 37,
 	RIGHT: 39,
@@ -12,7 +13,7 @@ let game = {
 	blocks: [],
 	score: 0,
 	rows: 6,
-	cols: 10,
+	cols: 1,
 	width: 1280,
 	height: 720,
 	sprites: {
