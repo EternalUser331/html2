@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Треугольник</title>
+	<style>
+		.block {
+			width: 300px;
+			height: 10px;
+			background: green;
+			border-radius: 10px;
+			padding: 20px;
+			position: relative;
+			color: #fff;
+		} 
+		.block::after {
+			content: '';
+			position: absolute;
+			left: 20px; bottom: -20px;
+			border: 10px solid transparent;
+			border-top: 10px solid green;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="block">Здесь может быть выша реклама.</div>
+
+</body>
+</html>
