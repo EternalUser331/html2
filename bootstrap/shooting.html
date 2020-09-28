@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Shooting range</title>
+	<style>
+
+	.kub {
+		width: 100px;
+			height: 100px;
+			background-color: red;
+			border-radius: 50px;
+			position: absolute;
+			right: 50%;
+			bottom: 50%;
+			animation: go-circle 5s infinite alternate;
+
+
+		}
+
+		@keyframes go-circle {
+			from {
+				right: 0%;
+			}
+
+			to {
+				right: 50% - 10px; 
+			}
+		}
+
+		.treyg {
+			width: 0px;
+			height: 0px;
+			border-left: 50px solid transparent;
+			border-right: 50px solid transparent;
+			border-bottom: 100px solid red;
+
+			right: 50%;
+			top: 10%;
+			position: absolute;
+*/
+	/*	}*/
+
+		.test {
+			width: 1000px;
+			height: 1000vh;
+			color: #fff;
+			background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5,  #23D5AB);
+			background-size: 400% 400%;
+			position: relative;
+			animation: change 10s ease-in-out infinite;
+			transform: translate(-50%, -50%);
+
+			
+			
+			
+/*
+			background: rgb(2,0,36);
+			background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);*/
+		}
+
+		@keyframes change {
+			0%{
+				background-position: 0 50%;
+			}
+
+			50%{
+				background-position: 100 50%;
+			}
+
+			100%{
+				background-position: 0 50%;
+			}
+
+		}
+
+
+
+
+
+
+
+
+
+
+
+		
+
+	</style>
+
+
+</head>
+<body>
+	<div class="go"></div>
+	<div class="kub"></div>
+	<div class="treyg"></div>
+	<div class="test"></div>
+
+
+
+</body>
+</html>

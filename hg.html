@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		.dif {
+			border: 1px solid;
+			background-color: red;
+			width: 100px;
+			height: 100px;
+			top: 50%;
+			right: 50%;
+			position: absolute;
+		}
+
+		.dif:hover {
+			background-color: blue;
+			transform: ;
+			animation: go-anim 3s infinite alternate;
+		}
+
+
+/*		@keyframes go-anim {
+			from {
+				left: 0%;
+			}
+
+			to {
+				left: 50% - 10px;
+			}
+		}*/
+
+	</style>
+
+	<script>
+		function pidor() {
+			let p = document.getElementByClass('dif')
+			p[0].style.background-color = green;
+		}
+	</script>
+</head>
+<body>
+	<div class="dif" onclick="pidor">123</div>
+
+</body>
+</html>
