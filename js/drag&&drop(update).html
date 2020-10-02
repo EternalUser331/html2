@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<style>
+
+
+    #div1, #div2, #div3 {
+      float: left;
+      width: 100px;
+      height: 35px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+
+    #getAnswerShell{
+      width: 402px;
+      height: 50px;
+      border-radius: 30px;
+      border: 1px solid white;
+      box-sizing: border-box;
+      background-color: #F0E68C;
+
+    }
+    #getAnswer {
+      text-align: center;
+      width: 100px;
+      height: 50px;
+      border-radius: 50px;
+      border:1px solid white;
+      box-sizing: border-box;
+      float: left;
+    }
+
+    #getAnswer1 {
+      text-align: center;
+      width: 100px;
+      height: 50px;
+      border-radius: 50px;
+      border:1px solid white;
+      box-sizing: border-box;
+      float: left;
+    }
+
+    #getAnswer2 {
+          text-align: center;
+          width: 100px;
+          height: 50px;
+          border-radius: 50px;
+          border:1px solid white;
+          box-sizing: border-box;
+          float: left;
+        }
+
+
+    #getAnswer3 {
+          text-align: center;
+          width: 100px;
+          height: 50px;
+          border-radius: 50px;
+          border:1px solid white;
+          box-sizing: border-box;
+          float: left;
+        }
+
+
+
+</style>
+<script>
+
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      // ev.dataTransfer.setData("text", ev.targer.id);
+      ev.target.appendChild(document.getElementById(data));
+
+    }
+
+    function drop1(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      // ev.dataTransfer.setData("text", ev.targer.id);
+      ev.target.appendChild(document.getElementById(data));
+
+    }
+
+    function drop2(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      // ev.dataTransfer.setData("text", ev.targer.id);
+      ev.target.appendChild(document.getElementById(data));
+
+    }
+
+    function drop3(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      // ev.dataTransfer.setData("text", ev.targer.id);
+      ev.target.appendChild(document.getElementById(data));
+
+    }
+
+    function drop4(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      // ev.dataTransfer.setData("text", ev.targer.id);
+      ev.target.appendChild(document.getElementById(data));
+
+    }
+
+
+
+
+
+</script>
+</head>
+<body>
+
+<h2>Drag and Drop</h2>
+<p>create some text here</p>
+
+
+  <!-- Тут оболочка для ответов  -->
+  <div id="getAnswerShell">
+
+  <div id="getAnswer" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">some text<p>
+  </div>
+
+
+
+  <div id="getAnswer1" ondrop="drop2(event)" ondragover="allowDrop(event)">
+    <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">here<p>
+  </div>
+
+  <div id="getAnswer2" ondrop="drop3(event)" ondragover="allowDrop(event)">
+    <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">create<p>
+  </div>
+
+  <div id="getAnswer3" ondrop="drop4(event)" ondragover="allowDrop(event)">
+    <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">who<p>
+  </div>
+
+</div>
+
+
+<!--   Место для drop,a -->
+
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    <p draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31"><p>
+  </div>
+
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">
+     <p draggable="true" ondragstart="drag(event)" id="drag2" width="88" height="31"><p>
+    
+  </div>
+
+
+</body>
+</html>
