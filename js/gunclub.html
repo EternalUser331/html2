@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gun club</title>
+	<style>
+
+		#target{
+			position: fixed;
+			width: 150px;
+			height: 150px;
+			background-color: ;
+			bottom: 30px;
+			right: 50px;
+			/*transform: rotate(40deg);*/
+			animation: tir 5s infinite alternate;
+			border-radius: 50px; 
+			border:1px solid black;
+		}
+
+
+		#target1{
+			position: fixed;
+			width: 150px;
+			height: 150px;
+			background-color: grey;
+			bottom: 1000px;
+			right: 1000px;
+			/*transform: rotate(40deg);*/
+			animation: tir 2s infinite alternate;
+			border-radius: 50px; 
+			border:1px solid black;
+		}
+
+
+		#target2{
+			position: fixed;
+			width: 150px;
+			height: 150px;
+			background-color: grey;
+			bottom: 220px;
+			right: 400px;
+			/*transform: rotate(40deg);*/
+			animation: tir 3s infinite alternate;
+			border-radius: 50px; 
+			border:1px solid black;
+		}
+
+		@keyframes tir {
+			from {
+				bottom: 0px;
+				transform: rotate(180deg);
+			}
+
+			to {
+				bottom: 85%;
+			}
+		}
+
+
+		.target:hover {
+			animation: shoot 0s infinite alternate;
+			background-color: red;
+
+		}
+
+		/*@keyframes shoot {
+			from { 
+
+			}
+		}*/
+
+		.ptr{
+			width: 50px;
+			height: 50px;
+			background-color: red;
+			border-radius: 50px;
+			position: absolute;
+		}
+	</style>
+
+	<script>
+		window.onload(){
+
+		var click = 0;
+
+		document.getElementById("target").addEventListener("click", clickFunction);
+
+		
+
+		function clickFunction() {
+			if (click%2==0 ) {
+			document.getElementById("target").innerHTML  = '<div class="ptr">1213</div>';
+		}
+
+		else{
+			document.getElementById('target').innerHTML = "do";
+		}
+			click++;
+		}
+	}
+	</script>
+
+</head>
+<body>
+
+		<img src="" id="target">
+		<img src="logo1.jpg" id="target1">
+		<img src="logo2.jpg" id="target2">
+
+
+
+</body>
+</html>

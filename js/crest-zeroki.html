@@ -5,6 +5,7 @@
 	<script>
 		window.onload = function() {
 
+
 		for(var i = 0; i < 9; i++){
 		document.getElementById('field').innerHTML+='<div class="block"></div>';
 		}
@@ -58,17 +59,16 @@
 
 
 			if (hod == 9) {
-				alert('nobody win');	
+				alert('new game');	
 
 			}
 					
 			}
 
-			// function newgame(){
-			// 	if (event.target.ClassName == 'newgame') {
-			// 		function(event);
-			// 	}
-			// }
+			document.getElementById('newgame').onclick = function() {
+				window.onload();
+
+			}
 
 
 			
@@ -101,7 +101,7 @@
 </head>
 <body>
 	<div id="field"></div>
-	<button class="newgame">New Game</button>
+	<button id="newgame">New Game</button>
 
 </body>
 </html>

@@ -11,13 +11,47 @@
 		#hero {
 			width: 50px;
 			height: 50px;
-			background-color: green;
+			background-color: white;
+			animation: tir 4s infinite alternate;
+			bottom:10px;
+			right: 10px;
+			position: absolute;
+		}
+		.ptr {
+			background-color: red;
+			width: 50px;
+			height: 50px;
+			border-radius: 50px;
+		}
+		#kurat {
+			width: 150px;
+			height: 150px;
+			border-radius: 50px;
+			border: 1px solid black;
+		}
+
+		@keyframes tir {
+			from {
+				bottom: 0px;
+				transform: rotate(180deg);
+			}
+
+			to {
+				bottom: 85%;
+			}
+		}
+
+		#logotip {
+			width: 150px;
+			height: 150px;
+			border-radius: 50px;
+			border: 1px solid black;
 		}
 	</style>
 </head>
 <body>
-	<div id="kub">
-	<p id="hero">...</p>
+	<!-- <div id="kub"> -->
+	<p id="hero"><img src="logo.jpg" id="logotip"></p>
 	</div>
 
 
@@ -30,19 +64,15 @@
 
 		function clickFunction() {
 			if (click%2==0 ) {
-			document.getElementById("hero").innerHTML  = "You";
+			document.getElementById("hero").innerHTML  = '<img src="boom.jpg" id="kurat">';
 		}
 
 		else{
-			document.getElementById('hero').innerHTML = "Hero";
+			document.getElementById('hero').innerHTML = '<img src="logo.jpg" id="logotip">';
 		}
 			click++;
 		}
 		
-	
-	
-	
-	// document.getElementById('kub').background-color = "red"; 
 	</script>
 	
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <style>
+        #target {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+
+        }
+
+
+
+
+
+        @keyframes tir {
+            from {
+                bottom: 0px;
+                transform: rotate(180deg);
+            }
+
+            to {
+                bottom: 85%;
+            }
+        }
+
+
+        .ptr {
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+
+    <script>
+
+        var click = 0;
+
+        document.getElementById("target").addEventListener("click", clickFunction);
+
+        
+
+        function clickFunction() {
+            if (click%2==0 ) {
+            document.getElementById("target").innerHTML  = '<div class="ptr">1213</div>';
+        }
+
+        else{
+            document.getElementById('target').innerHTML = "do";
+        }
+            click++;
+        }
+
+    </script>
+</head>
+<body>
+    <div id="target">132</div>
+
+</body>
+</html>

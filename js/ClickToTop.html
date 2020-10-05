@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>click to top</title>
+	<style>
+		.text{
+			width: 50px;
+
+		}
+
+		#top{
+			position: fixed;
+			right: 30px;
+			bottom: 30px;
+		}
+
+		#bottom {
+			width: 50px;
+			height: 50px;
+			position: fixed;
+			right: 30px;
+			top: 30px;
+		}
+	</style>
+
+	<script>
+		window.onload = function() {
+			var scrolled;
+			var timer;
+
+			document.getElementById('top').onclick = function() {
+				scrolled = window.pageYOffset;
+				scrolledToTop();
+			}
+
+			function scrolledToTop() {
+				if (scrolled > 0 ){
+					window.scrollTo(0, scrolled);
+					scrolled = scrolled - 100;
+					timer = setTimeout(scrolledToTop, 100);
+				}else {
+					clearTimeout(timer);
+					window.scrollTo(0,0);
+				}
+			}
+
+			document.getElementById('bottom').onclick = function() {
+				scrolled = window.pageYOffset;
+				scrolledToBottom();
+			}
+
+			function scrolledToBottom() {
+				if(scrolled < 0){
+					window.scrollTo(100, scrolled);
+					scrolled = scrolled - 100;
+					timer = setTimeout(scrolledToBottom, 100);
+				}else{
+					clearTimeout(timer);
+					window.scrollTo(50000,50000);
+				}
+			}
+		}
+
+	</script>
+</head>
+
+
+<body>
+	<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cum suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci.
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum  suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cm suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cum suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci.
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum  suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cm suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cum suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci.
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum  suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cm suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cum suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci.
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum  suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cm suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cum suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci.
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum  suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cm suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cum suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci.
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum  suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+	Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci voluptatum cm suscipit iure tenetur voluptatibus cupiditate voluptate, ut in! Vel voluptatem autem in a et numquam corporis repellendus illum adipisci
+</p>
+<button id="top">top</button>
+<button id="bottom">bottom</button>
+
+</body>
+</html>
