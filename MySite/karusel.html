@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script>
+		window.onload = function() {
+			var click = 0;
+
+			document.getElementById('close').onclick = function() {
+			if (click%2==0) {
+				document.getElementById('search').innerHTML+='<input type="text" placeholder="search">';
+		}else {
+			document.getElementById('search').innerHTML-='<input type="text" placeholder="search">';
+		}
+		
+		
+
+		console.log(click);
+		click++;
+}
+}
+	</script>
+
+	<style>
+		#search{
+			width: 300px;
+			height: 100px;
+			background-color: white;
+			border: 1px solid black;
+
+		}
+
+
+		.searchLine {
+			width: 100px;
+			height: 50px;
+			background-color: grey;
+
+		}
+
+		#close {
+			border: 1px solid black;
+			float: right;
+		}		
+
+	</style>
+</head>
+<body>
+	<div id="search">
+		<div id="close">Close</div>
+		<label for="poisk" id="poisk"></label>
+	</div>
+
+</body>
+</html>
